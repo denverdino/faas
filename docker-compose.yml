@@ -37,7 +37,7 @@ services:
                 constraints: [node.role == manager]
 
     alertmanager:
-        image: quay.io/prometheus/alertmanager
+        image: prom/alertmanager
         environment:
             no_proxy: "gateway"
         volumes:
